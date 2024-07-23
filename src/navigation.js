@@ -12,7 +12,7 @@ export const footerData = {
   ],
   socialLinks: [
     { ariaLabel: 'X', icon: 'tabler:brand-x', href: 'https://x.com/nuovotaka' },
-    { ariaLabel: 'Youtube', icon: 'tabler:brand-youtube', href: 'https://x.com/nuovotaka' },
+    { ariaLabel: 'Youtube', icon: 'tabler:brand-youtube', href: 'https://www.youtube.com/@nuovotakatv' },
     { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/takahiro_723/' },
     { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/nuovotaka' },
   ],
