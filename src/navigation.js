@@ -3,8 +3,8 @@ export const footerData = {
     {
       title: 'About Us',
       links: [
-        { text: 'About', href: '#' },
-        { text: 'Website', href: 'https://nuovotaka.com' },
+        { text: 'About', href: '/about' },
+        { text: 'WebSite', href: 'https://nuovotaka.com' },
         { text: 'Blog', href: 'https://blog.nuovotaka.com' },
         { text: 'Shop', href: 'https://nuovotaka-kbd.stores.jp' },
       ],

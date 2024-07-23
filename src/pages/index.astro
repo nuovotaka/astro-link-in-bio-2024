@@ -3,6 +3,7 @@ import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import Logo from '~/components/Logo.astro';
 
 const metadata = {
   title: 'Lead Generation Landing Page Demo',
@@ -10,25 +11,78 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
-  <!-- Hero2 Widget ******************* -->
-
-  <Hero
-    title="Link 一覧"
-    actions={[
-      { variant: 'primary', text: 'Call to Action', href: '#', icon: 'tabler:square-rounded-arrow-right' },
-      { text: 'Learn more', href: '#' },
-    ]}
+  <Logo
+    image={{
+      src: '~/assets/images/instagram_prof.png',
+      alt: 'prof',
+    }}
   />
+  <!-- Hero Widget ******************* -->
+  <Hero title="Link 一覧" image={{ src: '~/assets/images/hero-image.jpeg', alt: 'Nuovotaka Link in BIO Hero Image' }} />
 
   <CallToAction
-    title="Coming soon"
-    subtitle="We are working on the content of these demo pages. You will see them very soon. Stay tuned Stay tuned!"
+    title="自作キーボードSHOP"
     actions={[
       {
         variant: 'primary',
-        text: 'Download Template',
-        href: 'https://github.com/onwidget/astrowind',
-        icon: 'tabler:download',
+        text: 'nuovotaka-kbd',
+        href: 'https://nuovotaka-kbd.stores.jp',
+        icon: 'tabler:shopping-bag',
+      },
+    ]}
+  />
+  <CallToAction
+    title="WebSite"
+    actions={[
+      {
+        variant: 'primary',
+        text: 'nuovotaka',
+        href: 'https://nuovotaka.com',
+        icon: 'tabler:home',
+      },
+    ]}
+  />
+  <CallToAction
+    title="X"
+    actions={[
+      {
+        variant: 'primary',
+        text: 'nuovotaka',
+        href: 'https://x.com/nuovotaka',
+        icon: 'tabler:brand-x',
+      },
+    ]}
+  />
+  <CallToAction
+    title="YouTube"
+    actions={[
+      {
+        variant: 'primary',
+        text: 'nuovotakaTV',
+        href: 'https://www.youtube.com/@nuovotakatv',
+        icon: 'tabler:brand-youtube',
+      },
+    ]}
+  />
+  <CallToAction
+    title="Instagram"
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Takahiro_723',
+        href: 'https://www.instagram.com/takahiro_723/',
+        icon: 'tabler:brand-instagram',
+      },
+    ]}
+  />
+  <CallToAction
+    title="GitHub"
+    actions={[
+      {
+        variant: 'primary',
+        text: 'nuovotaka',
+        href: 'https://github.com/nuovotaka',
+        icon: 'tabler:brand-github',
       },
     ]}
   />

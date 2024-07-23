@@ -1,9 +1,19 @@
 ---
+import Image from '~/components/common/Image.astro';
 import { SITE } from 'astrowind:config';
+
+const { image = [] } = Astro.props;
 ---
 
 <span
   class="self-center ml-2 rtl:ml-0 rtl:mr-2 text-2xl md:text-xl font-bold text-gray-900 whitespace-nowrap dark:text-white"
 >
-  {SITE?.name}
+  {
+    image.src && (
+      <span class="flex justify-center col-span-1 my-2 lg:my-4 py-1 px-3 rounded-md dark:bg-gray-200">
+        <Image src={image.src} alt={image.alt || ''} class="max-h-18" width={120} height={120} layout="fixed" />
+      </span>
+    )
+  }
+  <span class="flex justify-center text-2xl">{SITE?.name}</span>
 </span>
